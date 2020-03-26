@@ -19,7 +19,7 @@ CSVファイルをMetabaseで可視化する
 ## Install
 1. git clone
 ```sh
-$ git clone XXXX
+$ git clone https://github.com/numasa/metabase.git
 $ cd metabase
 ```
 2. build & up
@@ -41,6 +41,6 @@ $ docker-compose exec postgres /bin/ash
 ```
 6. Access localhost:3000 with browser & setting your db params
 </br>
-<img src="./metabase_capture_db_settings.png" width="70%">
+<img src="https://user-images.githubusercontent.com/55865542/77620417-a8189580-6f7d-11ea-8955-a9716ce8d690.png" width="70%">
 </br>
-<img src="./metabase_capture_example.png" width="100%">
+<img src="https://user-images.githubusercontent.com/55865542/77620436-b961a200-6f7d-11ea-9cd4-61f378b49c67.png" width="100%">
