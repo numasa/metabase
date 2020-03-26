@@ -20,7 +20,7 @@ CSVファイルをMetabaseで可視化する
 1. git clone
 ```sh
 $ git clone https://github.com/numasa/metabase.git
-$ cd metabase
+$ cd metabase; mkdir csv_data db_data
 ```
 2. build & up
 ```bash
