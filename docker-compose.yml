@@ -1,0 +1,23 @@
+version: "3"
+services:
+  metabase:
+    container_name: metabase
+    image: metabase/metabase:v0.34.3
+    # restart: always
+    ports:
+      - "3000:3000"
+    links:
+      - postgres
+  postgres:
+    container_name: postgres
+    build: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      TZ: "Asia/Tokyo"
+      POSTGRES_DB: metabase
+      POSTGRES_PASSWORD: metabase
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+      - ./csv_data:/tmp
