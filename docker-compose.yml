@@ -3,11 +3,12 @@ services:
   metabase:
     container_name: metabase
     image: metabase/metabase:v0.34.3
-    # restart: always
     ports:
       - "3000:3000"
     links:
       - postgres
+    volumes:
+      - ./metabase_data:/metabase.db
   postgres:
     container_name: postgres
     build: postgres
